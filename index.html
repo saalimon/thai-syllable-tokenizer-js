@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Khum Phwn</title>
+        <link rel="stylesheet" href="css/pico.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    </head>
+    <body>
+        <header  class="container">
+            <hgroup>
+                <h1>Thai Syllable tokenizer!</h1>
+                <h2>Syllable noun /ˈsɪləbl/ any of the units into which a word is divided, containing a vowel sound and usually one or more consonants</h2>
+              </hgroup>
+        </header >
+        <div class="container">
+            <form id="syllableForm">
+                <label for="text">Word</label>
+                <input type="text" id="text" name="text" placeholder="">
+                <output id="outp"></output>
+                <input type="reset" value="Reset" onclick="document.getElementById('syllableForm').reset()">
+                <input type="button" value="Submit" onclick="syllabel_tokenize(document.getElementById('text').value)">
+            </form>
+        </div>
+            
+        <!-- Footer -->
+        <footer class="container">
+            <small>Built with <a href="https://picocss.com">Pico</a> ✖ <a href="https://github.com/saalimon">Saalimon</a></small>
+        </footer>
+        <!-- ./ Footer -->
+    </body>
+    <script src="script/syllable_tokenize.js"></script>
+</html>
